@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/blur">
+
+    <TextView
+        android:id="@+id/tv_Action"
+        android:layout_width="320dp"
+        android:layout_height="155dp"
+        android:layout_below="@+id/tv_ActionNumberDef"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="11dp"
+        android:background="@drawable/rounded_textview"
+        android:gravity="center_horizontal|center_vertical"
+
+        android:textSize="17sp" />
+
+    <EditText
+        android:id="@+id/et_Rate"
+        android:layout_width="70dp"
+        android:layout_height="50dp"
+        android:background="#80FAFAFA"
+        android:ems="10"
+        android:inputType="number"
+        android:layout_marginTop="43dp"
+        android:gravity="center_horizontal|center_vertical"
+        android:layout_below="@+id/tv_Action"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:id="@+id/btnAcceptRate"
+        style="@style/Widget.AppCompat.Button"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/et_Rate"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="25dp"
+        android:background="@drawable/rounded"
+        android:text="@string/accept" />
+
+    <TextView
+        android:id="@+id/tv_ActionNumberDef"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:text="/34"
+        android:textSize="18sp"
+        android:layout_alignParentTop="true"
+        android:layout_alignRight="@+id/et_Rate"
+        android:layout_alignEnd="@+id/et_Rate"
+        android:layout_marginRight="11dp"
+        android:layout_marginEnd="11dp" />
+
+    <TextView
+        android:id="@+id/tv_ActionNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/tv_Action"
+        android:layout_toLeftOf="@+id/tv_ActionNumberDef"
+        android:layout_toStartOf="@+id/tv_ActionNumberDef"
+        android:textSize="18sp" />
+
+</RelativeLayout>

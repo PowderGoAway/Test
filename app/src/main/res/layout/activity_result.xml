@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:background="@drawable/blur">
+
+    <TextView
+        android:id="@+id/tv_ProfTitle"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:text="Профессия:"
+        android:layout_marginTop="17dp"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentTop="true"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/tv_PossibTitle"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:text="Вероятность готовности к выполнению профессии:"
+        android:layout_marginTop="26dp"
+        android:layout_centerHorizontal="true"
+        android:textSize="18sp"
+        android:textAlignment="center"
+        android:layout_below="@+id/tv_ProfResult"/>
+
+    <TextView
+        android:id="@+id/tv_Possibility"
+        android:layout_width="80dp"
+        android:layout_height="50dp"
+        android:background="@drawable/rounded_textview"
+        android:gravity="center_horizontal|center_vertical"
+        android:textSize="24sp"
+        android:textStyle="normal|bold"
+        android:layout_marginTop="11dp"
+        android:layout_below="@+id/tv_PossibTitle"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:id="@+id/tv_ProfResult"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_ProfTitle"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="13dp"
+        android:gravity="center_horizontal|center_vertical"
+        android:textSize="20sp"
+        android:textStyle="normal|bold" />
+
+    <Button
+        android:id="@+id/btnReturn"
+        style="@style/Widget.AppCompat.Button"
+        android:layout_width="250dp"
+        android:layout_height="80dp"
+        android:background="@drawable/rounded"
+        android:text="Вернуться к выбору профессии"
+        android:layout_marginTop="22dp"
+        android:layout_below="@+id/btnDetails"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:id="@+id/btnDetails"
+        style="@style/Widget.AppCompat.Button"
+        android:layout_width="250dp"
+        android:layout_height="80dp"
+        android:background="@drawable/rounded"
+        android:text="Посмотреть подробности"
+        android:layout_below="@+id/tv_PossibTitle"
+        android:layout_alignLeft="@+id/btnReturn"
+        android:layout_alignStart="@+id/btnReturn"
+        android:layout_marginTop="82dp" />
+
+    <Button
+        android:id="@+id/btnBackToMenu"
+        style="@style/Widget.AppCompat.Button"
+        android:layout_width="250dp"
+        android:layout_height="80dp"
+        android:background="@drawable/rounded"
+        android:text="Вернуться в меню"
+        android:layout_below="@+id/btnReturn"
+        android:layout_alignLeft="@+id/btnReturn"
+        android:layout_alignStart="@+id/btnReturn"
+        android:layout_marginTop="21dp"/>
+
+</RelativeLayout>

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/blur"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.example.meow.test.MainActivity"
+    tools:showIn="@layout/activity_main">
+
+
+    <Button
+        android:id="@+id/btnPassTest"
+        style="@style/Widget.AppCompat.Button"
+        android:layout_width="250dp"
+        android:layout_height="80dp"
+        android:layout_above="@+id/btnSeeResult"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="35dp"
+        android:background="@drawable/rounded"
+        android:text="@string/pass_test"
+        android:textColorLink="@android:color/holo_purple"
+        tools:layout_editor_absoluteX="67dp"
+        tools:layout_editor_absoluteY="49dp" />
+
+    <Button
+        android:id="@+id/btnSeeResult"
+        style="@style/Widget.AppCompat.Button"
+        android:layout_width="250dp"
+        android:layout_height="80dp"
+        android:layout_above="@+id/btnExit"
+        android:layout_alignLeft="@+id/btnExit"
+        android:layout_alignStart="@+id/btnExit"
+        android:layout_marginBottom="31dp"
+        android:background="@drawable/rounded"
+        android:text="@string/see_result"
+        tools:layout_editor_absoluteX="67dp"
+        tools:layout_editor_absoluteY="169dp" />
+
+    <Button
+        android:id="@+id/btnExit"
+        style="@style/Widget.AppCompat.Button"
+        android:layout_width="250dp"
+        android:layout_height="80dp"
+        android:layout_alignLeft="@+id/btnPassTest"
+        android:layout_alignParentBottom="true"
+        android:layout_alignStart="@+id/btnPassTest"
+        android:layout_marginBottom="167dp"
+        android:background="@drawable/rounded"
+        android:text="@string/exit"
+        tools:layout_editor_absoluteX="67dp"
+        tools:layout_editor_absoluteY="284dp" />
+</RelativeLayout>
